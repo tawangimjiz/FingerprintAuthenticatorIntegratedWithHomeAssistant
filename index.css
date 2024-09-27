@@ -38,7 +38,8 @@ ol, p {
     margin-bottom: 10px;
 }
 li{
-    margin-top:16px
+    margin-top:16px;
+    line-height: 1.5;
 }
 
 
