@@ -1,5 +1,21 @@
 .show{
     width: 50%;
     margin: 0 auto;
-    font-family: Monospace;
+    font-family: Serif;
+    background-color: #EEEEEE;
+    color: #373A40;
+}
+.slide{
+    padding-left: 15px;
+    width: 750px;
+}
+.fingerprintref{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fingerprintconnect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
