@@ -27,4 +27,4 @@ This video explains our Home Assistant dashboard.
 
 [Embed Title](https://www.youtube.com/embed/V0V1Yi1UQbk "@embed") 
 
-[![IMAGE ALT TEXT HERE]([http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://raw.githubusercontent.com/laleesaw/miniproject/refs/heads/main/Image/dashboard.png))](http://www.youtube.com/watch?v=YOUTUBE_v=V0V1Yi1UQbk)
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/laleesaw/miniproject/refs/heads/main/Image/dashboard.png))]([http://www.youtube.com/watch?v=YOUTUBE_v=V0V1Yi1UQbk](https://www.youtube.com/embed/V0V1Yi1UQbk "@embed"))
