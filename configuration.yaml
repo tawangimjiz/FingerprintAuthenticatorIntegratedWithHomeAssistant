@@ -1,0 +1,82 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+mqtt:
+  sensor:
+    - name: "Fingerprint"
+      state_topic: "/fingerprint/mode/status"
+      value_template: "{{value_json.state}}"
+      json_attributes_topic: "/fingerprint/mode/status"
+      json_attributes_template: "{{value_json | tojson}}"
+
+template:
+  - sensor:
+      - name: "โหมดเซนเซอร์ลายนิ้วมือ"
+        state: "{{ state_attr('sensor.fingerprint', 'mode') }}"
+        icon: >-
+          {% if is_state('sensor.fingerprint', 'reading') %}
+            mdi:book-open-outline
+          {% elif is_state('sensor.fingerprint', 'learning') %}
+            mdi:book-open-page-variant
+          {% else %}
+            mdi:book
+          {% endif %}
+
+      - name: "สถานะลายนิ้วมือ"
+        state: "{{ states('sensor.fingerprint') }}"
+        icon: >-
+          {% if is_state('sensor.fingerprint', 'Waiting') %}
+            mdi:fingerprint
+          {% elif is_state('sensor.fingerprint', 'Matched') %}
+            mdi:fingerprint
+          {% elif is_state('sensor.fingerprint', 'Not matched') %}
+            mdi:fingerprint-off
+          {% else %}
+            mdi:help
+          {% endif %}
+
+      - name: "ID ลายนิ้วมือ"
+        state: "{{ state_attr('sensor.fingerprint', 'id') }}"
+
+      - name: "บุคคลลายนิ้วมือ"
+        state: >-
+          {% if states('sensor.fingerprint_id') | int >= 1 %}
+            {%- set printid = states('sensor.fingerprint_id') | int -%}
+            {%- set prints = states("input_text.fingerprint_data") | from_json if states("input_text.fingerprint_data") else [] -%}
+            {%- set fingerprint = prints | selectattr('id', 'eq', printid) | first -%}  # ใช้ printid เพื่อหาชื่อ
+            {{ fingerprint["name"] if fingerprint else "ไม่ทราบชื่อ" }}  # แสดงชื่อแทน ID
+          {% elif is_state('sensor.fingerprint', 'Waiting') %}
+            รออยู่
+          {% elif is_state('sensor.fingerprint', 'Not matched') %}
+            ไม่ตรงกัน
+          {% endif %}
+        icon: >-
+          {% if is_state('sensor.fingerprint', 'Waiting') %}
+            mdi:human-male
+          {% elif is_state('sensor.fingerprint', 'Matched') %}
+          mdi:human-greeting
+          {% elif is_state('sensor.fingerprint', 'Not matched') %}
+          mdi:police-badge
+          {% else %}
+          mdi:help
+          {% endif %}
+
+influxdb:
+  host: wasinstupid1.local
+  port: 8086
+  database: Fingerprint
+  username: Pipeandfriends
+  password: wasinstupid1
+  max_retries: 3
+  include:
+    entities:
+      - sensor.fingerprint
+      - input_number.valid_key
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml

@@ -1,0 +1,1562 @@
+[
+    {
+        "id": "a504fd466a43452d",
+        "type": "tab",
+        "label": "Experiment Flow(Unused)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d96b8471400ad160",
+        "type": "tab",
+        "label": "OTP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "406722713b58f771",
+        "type": "tab",
+        "label": "Key Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ab188dc9.9e00b",
+        "type": "server",
+        "name": "Home Assistant",
+        "addon": true
+    },
+    {
+        "id": "1e5734de.b5addb",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 4,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m"
+    },
+    {
+        "id": "2e31528c.f3973e",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 2,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30
+    },
+    {
+        "id": "8036ff608ba6c168",
+        "type": "ha-entity-config",
+        "server": "ab188dc9.9e00b",
+        "deviceConfig": "",
+        "name": "",
+        "version": "6",
+        "entityType": "button",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "d558bb7a6aa38121",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c713dff5.21ab3",
+        "type": "ui_group",
+        "name": "Arbeitszimmer",
+        "tab": "a2b4d00e.93a548",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "aa21acb8.2e7348",
+        "type": "mqtt-broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": ""
+    },
+    {
+        "id": "a2b4d00e.93a548",
+        "type": "ui_tab",
+        "name": "Arbeitszimmer",
+        "icon": "book",
+        "order": 1
+    },
+    {
+        "id": "40bc1ae3166eb377",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "193decc2.f77053",
+        "type": "server",
+        "name": "Home Assistant",
+        "addon": true
+    },
+    {
+        "id": "1d707c49.07a204",
+        "type": "server",
+        "name": "Home Assistant",
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true
+    },
+    {
+        "id": "fee4c7b2.b5e188",
+        "type": "server",
+        "name": "Home Assistant",
+        "addon": true
+    },
+    {
+        "id": "c4befa2f.dc8018",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 4,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m"
+    },
+    {
+        "id": "5d1d1297ea5266bb",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "be27a43bf0c5e8ac"
+            ]
+        ]
+    },
+    {
+        "id": "be27a43bf0c5e8ac",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "Light On",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [
+            "e8a8635803cb8ebacce85b7a37ae9108"
+        ],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "light",
+        "service": "turn_on",
+        "x": 380,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d41d768e652e406",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "88f6750c19cd5602"
+            ]
+        ]
+    },
+    {
+        "id": "88f6750c19cd5602",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "Light Off",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [
+            "e8a8635803cb8ebacce85b7a37ae9108"
+        ],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "light",
+        "service": "turn_off",
+        "x": 400,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4fe7eb1c0047e73",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "8d38336a177e7f9d"
+            ]
+        ]
+    },
+    {
+        "id": "bb7fdc31bd1d791a",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "nootif phone",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"{{message}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [
+            {
+                "property": "messsage",
+                "propertyType": "msg",
+                "value": "Hello world",
+                "valueType": "str"
+            }
+        ],
+        "queue": "all",
+        "domain": "notify",
+        "service": "mobile_app_pipii",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "1589ae8ea1fa7682"
+            ]
+        ]
+    },
+    {
+        "id": "8d38336a177e7f9d",
+        "type": "change",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "msg",
+                "to": "Hello",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "bb7fdc31bd1d791a"
+            ]
+        ]
+    },
+    {
+        "id": "1589ae8ea1fa7682",
+        "type": "debug",
+        "z": "a504fd466a43452d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7d343aa189cd18c7",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "notif",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"The garage door has been open for 10 minutes.\",\"title\":\"Your Garage Door Friend\",\"target\":\"platform specific\",\"data\":\"platform specific\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [
+            {
+                "property": "",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "str"
+            }
+        ],
+        "queue": "all",
+        "domain": "notify",
+        "service": "mobile_app_pipii",
+        "x": 890,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ff86986ce819b0c",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "notif",
+        "payloadType": "str",
+        "x": 710,
+        "y": 320,
+        "wires": [
+            [
+                "7d343aa189cd18c7"
+            ]
+        ]
+    },
+    {
+        "id": "4c833c6c54b734bb",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "notif",
+        "payloadType": "str",
+        "x": 270,
+        "y": 640,
+        "wires": [
+            [
+                "55d6b6f529b03097"
+            ]
+        ]
+    },
+    {
+        "id": "55d6b6f529b03097",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"title\":\"Notification test\",\"message\":\"The notification is working fine!\",\"data\":{\"item\":\"\"}}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "notify",
+        "service": "mobile_app_pipii",
+        "x": 540,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a76b1579e7df792",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "notify closre light",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "notify",
+        "service": "mobile_app_pipii",
+        "x": 405,
+        "y": 760,
+        "wires": [
+            [
+                "f3fbb8c5769e8130"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "0704ff0ea6955b43",
+        "type": "inject",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{     \"title\": \"Action Notification Test\",     \"message\": \"Press the correct number.\",     \"data\": {         \"actions\": [             {                 \"action\": \"CORRECT_NUMBER\",                 \"title\": \"50\"             },             {                 \"action\": \"WRONG_NUMBER_1\",                 \"title\": \"21\"             },             {                 \"action\": \"WRONG_NUMBER_2\",                 \"title\": \"39\"             }         ]     } }",
+        "payloadType": "jsonata",
+        "x": 230,
+        "y": 780,
+        "wires": [
+            [
+                "1a76b1579e7df792"
+            ]
+        ]
+    },
+    {
+        "id": "9714d0c5e4e39b43",
+        "type": "server-events",
+        "z": "a504fd466a43452d",
+        "name": "Event all",
+        "server": "ab188dc9.9e00b",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "eventType": "mobile_app_notification_action",
+        "eventData": "",
+        "waitForRunning": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "$outputData(\"eventData\").event_type",
+                "valueType": "jsonata"
+            }
+        ],
+        "x": 220,
+        "y": 940,
+        "wires": [
+            [
+                "325d1e75e94f53ea"
+            ]
+        ]
+    },
+    {
+        "id": "dc42a7a6c05465f7",
+        "type": "debug",
+        "z": "a504fd466a43452d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "325d1e75e94f53ea",
+        "type": "switch",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "property": "payload.event.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "LIGHT_OFF",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "LIGHT_ON",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 940,
+        "wires": [
+            [
+                "21a9ac9b93b56ada"
+            ],
+            [
+                "21fe86e2af308015"
+            ]
+        ]
+    },
+    {
+        "id": "21a9ac9b93b56ada",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "Light Off",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [
+            "e8a8635803cb8ebacce85b7a37ae9108"
+        ],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "light",
+        "service": "turn_off",
+        "x": 620,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21fe86e2af308015",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "Light On",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "light",
+        "service": "turn_on",
+        "x": 620,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3fbb8c5769e8130",
+        "type": "debug",
+        "z": "a504fd466a43452d",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "53af40649a5c69e6",
+        "type": "api-call-service",
+        "z": "a504fd466a43452d",
+        "name": "",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "",
+        "service": "",
+        "x": 790,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "908f6af5f9b17297",
+        "type": "function",
+        "z": "d96b8471400ad160",
+        "name": "Create Number nitofication",
+        "func": "// Get the correct number from the incoming msg.payload\nlet X = msg.payload;\n\n// Prepare the JSON data structure for the notification\nlet jsonData = {\n    \"title\": \"Action Notification Test\",\n    \"message\": \"Press the correct number.\",\n    \"data\": {\n        \"actions\": [\n            {\n                \"action\": \"WRONG_NUMBER\", // Fixed action identifier\n                \"title\": \"Wrong Number 1\"    // Placeholder for random number\n            },\n            {\n                \"action\": \"WRONG_NUMBER\", // Fixed action identifier\n                \"title\": \"Wrong Number 2\"    // Placeholder for random number\n            },\n            {\n                \"action\": \"CORRECT_NUMBER\",  // This will be the correct number\n                \"title\": `${Math.floor(X)}`             // Dynamic correct number from msg.payload\n            }\n        ]\n    }\n};\n\n// Function to generate random two-digit numbers between 10 and 99\nfunction generateRandomTwoDigit() {\n    return Math.floor(Math.random() * 90) + 10;\n}\n\n// Generate two random numbers for the wrong options\nlet randomNumbers = [generateRandomTwoDigit(), generateRandomTwoDigit()];\n\n// Set the random numbers in the title for wrong actions\njsonData.data.actions[0].title = `${randomNumbers[0]}`;  // First wrong number\njsonData.data.actions[1].title = `${randomNumbers[1]}`;  // Second wrong number\n\n// Shuffle function to randomize the order of actions\nfunction shuffle(array) {\n    for (let i = array.length - 1; i > 0; i--) {\n        const j = Math.floor(Math.random() * (i + 1));\n        [array[i], array[j]] = [array[j], array[i]];\n    }\n}\n\n// Shuffle the actions list\nshuffle(jsonData.data.actions);\nlet jsonResult = JSON.stringify(jsonData, null, 4);\n\n// Assign the JSON object to msg.payload (not as a string)\nmsg.notification = jsonData;\nmsg.payload = jsonResult;\n\n// Return the msg object to pass it along the flow\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 360,
+        "wires": [
+            [
+                "972fe69e837c56c3",
+                "ed8d03b468c2a92d",
+                "8226fac8a0281fea",
+                "69bb274a08db84f3"
+            ]
+        ]
+    },
+    {
+        "id": "e9327beac6eabf28",
+        "type": "function",
+        "z": "d96b8471400ad160",
+        "name": "Create Random correct number",
+        "func": "msg.payload = msg.payload\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "908f6af5f9b17297",
+                "4969993f301a4bd6",
+                "adce535cbf49c1c5"
+            ]
+        ]
+    },
+    {
+        "id": "4969993f301a4bd6",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "Random Correct number",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8226fac8a0281fea",
+        "type": "api-call-service",
+        "z": "d96b8471400ad160",
+        "name": "",
+        "server": "ab188dc9.9e00b",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_pipii",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "msg.notification",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_pipii",
+        "x": 1000,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04836857c299ed2d",
+        "type": "inject",
+        "z": "d96b8471400ad160",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "notif",
+        "payloadType": "str",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "e9327beac6eabf28"
+            ]
+        ]
+    },
+    {
+        "id": "972fe69e837c56c3",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ed8d03b468c2a92d",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1e59558f3d3a4ed7",
+        "type": "server-events",
+        "z": "d96b8471400ad160",
+        "name": "Event all",
+        "server": "ab188dc9.9e00b",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "eventType": "mobile_app_notification_action",
+        "eventData": "",
+        "waitForRunning": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "$outputData(\"eventData\").event_type",
+                "valueType": "jsonata"
+            }
+        ],
+        "x": 200,
+        "y": 660,
+        "wires": [
+            [
+                "dcea5d3a463038cd"
+            ]
+        ]
+    },
+    {
+        "id": "dcea5d3a463038cd",
+        "type": "switch",
+        "z": "d96b8471400ad160",
+        "name": "",
+        "property": "payload.event.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "CORRECT_NUMBER",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WRONG_NUMBER",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "c61652d639af757a"
+            ],
+            [
+                "dc9f6536e5bc9ed3"
+            ]
+        ]
+    },
+    {
+        "id": "c61652d639af757a",
+        "type": "api-call-service",
+        "z": "d96b8471400ad160",
+        "name": "Light green",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "automation.new_automation_2"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "Light 50 triggered",
+                "valueType": "str"
+            }
+        ],
+        "queue": "none",
+        "domain": "automation",
+        "service": "trigger",
+        "x": 750,
+        "y": 600,
+        "wires": [
+            [
+                "147dbff4d4140d93"
+            ]
+        ]
+    },
+    {
+        "id": "dc9f6536e5bc9ed3",
+        "type": "api-call-service",
+        "z": "d96b8471400ad160",
+        "name": "Light  red",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "automation.25_light"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "light 25 trioggered",
+                "valueType": "str"
+            }
+        ],
+        "queue": "none",
+        "domain": "automation",
+        "service": "trigger",
+        "x": 740,
+        "y": 700,
+        "wires": [
+            [
+                "3419c70acd866dba"
+            ]
+        ]
+    },
+    {
+        "id": "147dbff4d4140d93",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3419c70acd866dba",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "adce535cbf49c1c5",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1486939279f4295a",
+        "type": "server-state-changed",
+        "z": "d96b8471400ad160",
+        "name": "Valid key Created",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "entityId": "input_number.valid_key",
+        "entityIdType": "exact",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "e9327beac6eabf28"
+            ]
+        ]
+    },
+    {
+        "id": "69bb274a08db84f3",
+        "type": "debug",
+        "z": "d96b8471400ad160",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7993328ac938d3e5",
+        "type": "server-state-changed",
+        "z": "406722713b58f771",
+        "name": "Event keygen",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            },
+            {
+                "property": "number",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "entityId": "sensor.key_generated",
+        "entityIdType": "exact",
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "cf267782260e7708",
+                "7141737e9add98ac",
+                "9cd578e740fc0f62"
+            ]
+        ]
+    },
+    {
+        "id": "cf267782260e7708",
+        "type": "debug",
+        "z": "406722713b58f771",
+        "name": "Key gen",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 220,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4c79b80395d04e67",
+        "type": "api-call-service",
+        "z": "406722713b58f771",
+        "name": "Set valid key",
+        "server": "ab188dc9.9e00b",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_number.set_value",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_number.valid_key"
+        ],
+        "labelId": [],
+        "data": "{\"entity_id\":\"input_number.valid_key\",\"value\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "input_number",
+        "service": "set_value",
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "813b162d7bf1569a"
+            ]
+        ]
+    },
+    {
+        "id": "813b162d7bf1569a",
+        "type": "debug",
+        "z": "406722713b58f771",
+        "name": "Valid key set!",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7141737e9add98ac",
+        "type": "ha-wait-until",
+        "z": "406722713b58f771",
+        "name": "Matched finger",
+        "server": "ab188dc9.9e00b",
+        "version": 2,
+        "outputs": 2,
+        "property": "state",
+        "comparator": "is",
+        "value": "Matched",
+        "valueType": "str",
+        "timeout": "2",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "entityId": "sensor.sthaanalaayniwmuue",
+        "entityIdFilterType": "exact",
+        "entityLocation": "data",
+        "entityLocationType": "none",
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "5749f5cf001e2eba",
+                "4d1ff119a8d9deba",
+                "4c79b80395d04e67"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "607a6c2129c31932",
+        "type": "api-call-service",
+        "z": "406722713b58f771",
+        "name": "",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"message\":\"{{Fingerprint unmatched}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "notify",
+        "service": "notify",
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "74d10e31445660e7"
+            ]
+        ]
+    },
+    {
+        "id": "74d10e31445660e7",
+        "type": "debug",
+        "z": "406722713b58f771",
+        "name": "debug 20",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9cd578e740fc0f62",
+        "type": "ha-wait-until",
+        "z": "406722713b58f771",
+        "name": "",
+        "server": "ab188dc9.9e00b",
+        "version": 2,
+        "outputs": 2,
+        "property": "state",
+        "comparator": "is",
+        "value": "Not matched",
+        "valueType": "str",
+        "timeout": "2",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "entityId": "sensor.sthaanalaayniwmuue",
+        "entityIdFilterType": "exact",
+        "entityLocation": "data",
+        "entityLocationType": "none",
+        "x": 420,
+        "y": 580,
+        "wires": [
+            [
+                "607a6c2129c31932"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5749f5cf001e2eba",
+        "type": "debug",
+        "z": "406722713b58f771",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4d1ff119a8d9deba",
+        "type": "api-call-service",
+        "z": "406722713b58f771",
+        "name": "random counter reset",
+        "server": "ab188dc9.9e00b",
+        "version": 5,
+        "debugenabled": false,
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "automation.random_counter_reset"
+        ],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "domain": "automation",
+        "service": "trigger",
+        "x": 700,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    }
+]

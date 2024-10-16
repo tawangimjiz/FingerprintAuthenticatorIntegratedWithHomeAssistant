@@ -1,0 +1,39 @@
+'1590438622575':
+  alias: Fingerprint learning mode
+  sequence:
+  - data:
+      payload_template: '{{ states("input_number.fingerprint_learning_id") | float }}'  # แปลงเป็น float
+      topic: /fingerprint/mode/learning
+    service: mqtt.publish
+  - service: input_text.set_value
+    data:
+      entity_id: input_text.fingerprint_data
+      value: |-
+        {% if states('input_text.fingerprint_data') == "unknown" %}
+          {{"[]"}}
+        {% endif %}
+  - service: input_text.set_value
+    data:
+      entity_id: input_text.fingerprint_data
+      value: >-
+        {% set print_id = states('input_number.fingerprint_learning_id') | int %}  # อันนี้ใช้ int ได้เพราะใช้เป็น ID
+        {% set print_name = states('input_text.fingerprint_learning_name') %}
+        {% set prints = states('input_text.fingerprint_data') | from_json if states('input_text.fingerprint_data') else [] %}
+        {{ (prints | rejectattr('id', 'eq', print_id) | list + [{'id': print_id, 'name': print_name}]) | tojson }}
+  mode: single
+
+'1590488431995':
+  alias: Fingerprint Delete Print
+  sequence:
+  - data:
+      payload_template: '{{ states("input_number.fingerprint_learning_id") | int }}'  # ส่ง ID เป็น int
+      topic: /fingerprint/mode/delete
+    service: mqtt.publish
+  - service: input_text.set_value
+    data:
+      entity_id: input_text.fingerprint_data
+      value: >-
+        {% set print_id = states('input_number.fingerprint_learning_id') | int %}
+        {% set prints = states('input_text.fingerprint_data') | from_json if states('input_text.fingerprint_data') else [] %}
+        {{ (prints | rejectattr('id', 'eq', print_id)) | list | tojson }}
+  mode: single
