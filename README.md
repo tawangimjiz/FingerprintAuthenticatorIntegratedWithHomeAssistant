@@ -24,7 +24,7 @@
 <div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/d4bc3953-2cf6-4c7f-a8d7-f5c290efd3c2" id="SLKdBPzOIfoj"></iframe></div>
 
 This video explains our Home Assistant dashboard.
-
+[![Watch the video]([https://img.youtube.com/vi/V0V1Yi1UQbk/0.jpg](https://raw.githubusercontent.com/laleesaw/miniproject/refs/heads/main/Image/dashboard.png))](https://www.youtube.com/watch?v=V0V1Yi1UQbk)
 [Embed Title](https://www.youtube.com/embed/V0V1Yi1UQbk "@embed") 
 
 [![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/laleesaw/miniproject/refs/heads/main/Image/dashboard.png)([http://www.youtube.com/watch?v=YOUTUBE_v=V0V1Yi1UQbk](https://www.youtube.com/embed/V0V1Yi1UQbk "@embed")]
