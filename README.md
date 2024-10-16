@@ -25,6 +25,8 @@
 
 This video explains our Home Assistant dashboard.
 
+[Embed Title](https://www.youtube.com/embed/V0V1Yi1UQbk "@embed") 
+
 <iframe width="764" height="430" src="https://www.youtube.com/embed/V0V1Yi1UQbk" title="Fingerprint dashboard" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The Home Assistant application on a mobile phone
