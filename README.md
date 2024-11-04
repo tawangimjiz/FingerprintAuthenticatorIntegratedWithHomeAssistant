@@ -1,6 +1,7 @@
 # **Fingerprint Authenticator intregated with Home Assistant**
-
-###### This project is a part of the SOFTWARE DEV PRACTICE I Computer Engineering (Cpr.E) KMUTNB BKK
+This project is a part of the SOFTWARE DEV PRACTICE I.<br>
+Presented to Dr.Rawat Siripokarpiro<br>
+King Mongkut's University of Technology North Bangkok, Thailand
 
 ## Team members
 1. ณฐพงศ์ รอดปรีชา  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6501012630069
