@@ -1,4 +1,4 @@
-# **Fingerprint Authenticator intregated with Home Assistant**
+# **Fingerprint Authenticator integrated with Home Assistant**
 This project is a part of the SOFTWARE DEV PRACTICE I.<br>
 Presented to Dr.Rawat Siripokarpiro<br>
 King Mongkut's University of Technology North Bangkok, Thailand
